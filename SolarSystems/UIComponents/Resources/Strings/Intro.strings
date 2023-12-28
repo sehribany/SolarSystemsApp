@@ -1,0 +1,14 @@
+/* 
+  Intro.strings
+  SolarSystems
+
+  Created by Şehriban Yıldırım on 27.12.2023.
+  
+*/
+
+// MARK: - Intro
+"Intro.Next"        = "Continue!";
+"Intro.Start"       = "Explore!";
+"Intro.firstTitle"  = "Ready to Explore Our Galaxy?";
+"Intro.secondTitle" = "Buckle Up for Interstellar Travel!";
+"Intro.thirdTitle"  = "Unveiling the Gates to Infinite Space.";
