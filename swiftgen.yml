@@ -1,0 +1,27 @@
+fonts:
+  inputs: SolarSystems/UIComponents/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: SolarSystems/UIComponents/Resources/Fonts/Fonts.swift
+    params:
+        publicAccess: public
+        
+strings:
+  inputs: SolarSystems/UIComponents/Resources/Strings
+  filter: .+\.strings$
+  outputs:
+    - templateName: structured-swift5
+      output: SolarSystems/UIComponents/Resources/Strings/StringConstants.swift
+      params:
+          publicAccess: public
+
+xcassets:
+  - inputs:
+    - SolarSystems/UIComponents/Resources/Assets/Images.xcassets
+    - SolarSystems/UIComponents/Resources/Assets/Icons.xcassets
+    - SolarSystems/UIComponents/Resources/Assets/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: SolarSystems/UIComponents/Resources/Assets/Assets.swift
+        params:
+            publicAccess: public
