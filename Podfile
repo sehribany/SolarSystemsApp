@@ -8,5 +8,8 @@ target 'SolarSystems' do
   # Pods for SolarSystems
   # Helper
   pod 'SwiftGen'
-
+  pod 'MobilliumUserDefaults'
+  pod 'SwiftEntryKit'
+  pod 'TinyConstraints'
+  pod 'Kingfisher'
 end
