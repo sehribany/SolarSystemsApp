@@ -2,9 +2,10 @@
 
 ## Concepts & Technologies Used
 - Swift
-- MVVM
+- MVVMR
 - SOLID
 - CocoaPods
 
 ## PODS
 - SwiftGen
+- Kingfisher
