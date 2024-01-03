@@ -9,3 +9,4 @@
 ## PODS
 - SwiftGen
 - Kingfisher
+- MobilliumUserDefaults
