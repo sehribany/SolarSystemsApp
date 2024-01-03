@@ -13,6 +13,8 @@ public enum L10n {
   public enum Intro {
     /// Ready to Explore Our Galaxy?
     public static let firstTitle = L10n.tr("Intro", "Intro.firstTitle", fallback: "Ready to Explore Our Galaxy?")
+    /// Embark on a Journey Beyond Imagination!
+    public static let fourthTitle = L10n.tr("Intro", "Intro.fourthTitle", fallback: "Embark on a Journey Beyond Imagination!")
     /// Intro.strings
     ///   SolarSystems
     /// 
@@ -20,8 +22,8 @@ public enum L10n {
     public static let next = L10n.tr("Intro", "Intro.Next", fallback: "Continue!")
     /// Buckle Up for Interstellar Travel!
     public static let secondTitle = L10n.tr("Intro", "Intro.secondTitle", fallback: "Buckle Up for Interstellar Travel!")
-    /// Explore!
-    public static let start = L10n.tr("Intro", "Intro.Start", fallback: "Explore!")
+    /// Get Started!
+    public static let start = L10n.tr("Intro", "Intro.Start", fallback: "Get Started!")
     /// Unveiling the Gates to Infinite Space.
     public static let thirdTitle = L10n.tr("Intro", "Intro.thirdTitle", fallback: "Unveiling the Gates to Infinite Space.")
   }
