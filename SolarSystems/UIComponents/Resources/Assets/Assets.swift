@@ -40,8 +40,10 @@ public enum Asset {
   }
   public enum Icons {
     public static let icBack = ImageAsset(name: "icBack")
+    public static let icRocket = ImageAsset(name: "icRocket")
   }
   public enum Images {
+    public static let introBackground = ImageAsset(name: "IntroBackground")
     public static let introBackground1 = ImageAsset(name: "IntroBackground1")
     public static let introBackground2 = ImageAsset(name: "IntroBackground2")
     public static let introBackground3 = ImageAsset(name: "IntroBackground3")
