@@ -11,10 +11,18 @@ public class IntroCell: UICollectionViewCell, ReusableView {
     
     public static var identifier: String = "IntroCell"
     
+    private var imageView: UIImageView = {
+        let imageView         = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
     private var descriptionView: UIView = {
-        let uiView                 = UIView()
-        uiView.backgroundColor     = Asset.Colors.appBlack.color.withAlphaComponent(0.5)
-        uiView.layer.cornerRadius  = 35
+        let uiView                = UIView()
+        uiView.backgroundColor    = Asset.Colors.appBlack.color.withAlphaComponent(0.5)
+        uiView.layer.cornerRadius = 35
+        uiView.layer.borderWidth  = 0.2
+        uiView.layer.borderColor  = Asset.Colors.appYellow1.color.cgColor
         return uiView
     }()
     
@@ -62,6 +70,7 @@ public class IntroCell: UICollectionViewCell, ReusableView {
     
     public func set(viewModel: IntroCellProtocol){
         self.viewModel        = viewModel
+        imageView.image       = viewModel.image
         titleLabel.text       = viewModel.titleText
         descriptionLabel.text = viewModel.descriptionText
     }
@@ -71,13 +80,23 @@ public class IntroCell: UICollectionViewCell, ReusableView {
 extension IntroCell{
     func addSubViews(){
         addDescriptionView()
+        addImageView()
         addDescriptionStackView()
+    }
+    
+    private func addImageView(){
+        contentView.addSubview(imageView)
+        imageView.centerXToSuperview()
+        imageView.topToSuperview()
+        imageView.top(to: descriptionView)
     }
     
     private func addDescriptionView() {
         contentView.addSubview(descriptionView)
-        descriptionView.top(to: contentView)
-        descriptionView.edgesToSuperview(excluding: .top)
+        descriptionView.leadingToSuperview()
+        descriptionView.trailingToSuperview()
+        descriptionView.bottomToSuperview()
+        descriptionView.topToSuperview().constant = 140
     }
     
     private func addDescriptionStackView() {
@@ -86,6 +105,6 @@ extension IntroCell{
         descriptionStackView.addArrangedSubview(descriptionLabel)
         descriptionStackView.leadingToSuperview().constant  = 30
         descriptionStackView.trailingToSuperview().constant = -30
-        descriptionStackView.topToSuperview().constant      = 200
+        descriptionStackView.topToSuperview().constant      = 150
     }
 }
