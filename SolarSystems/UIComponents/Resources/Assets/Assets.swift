@@ -28,6 +28,8 @@ public enum Asset {
     public static let appBlack = ColorAsset(name: "appBlack")
     public static let appCyan1 = ColorAsset(name: "appCyan1")
     public static let appCyan2 = ColorAsset(name: "appCyan2")
+    public static let appDark = ColorAsset(name: "appDark")
+    public static let appGray = ColorAsset(name: "appGray")
     public static let appOrange1 = ColorAsset(name: "appOrange1")
     public static let appOrange2 = ColorAsset(name: "appOrange2")
     public static let appPink1 = ColorAsset(name: "appPink1")
@@ -40,6 +42,8 @@ public enum Asset {
   }
   public enum Icons {
     public static let icBack = ImageAsset(name: "icBack")
+    public static let icDiscovery = ImageAsset(name: "icDiscovery")
+    public static let icHome = ImageAsset(name: "icHome")
     public static let icRocket = ImageAsset(name: "icRocket")
   }
   public enum Images {
