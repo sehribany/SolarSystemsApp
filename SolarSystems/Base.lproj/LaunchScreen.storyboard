@@ -19,17 +19,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="W28-sz-MRT">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundplanets" translatesAutoresizingMaskIntoConstraints="NO" id="Gdy-wi-7Q3">
-                                <rect key="frame" x="150" y="-52" width="243" height="622"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gdy-wi-7Q3" secondAttribute="bottom" constant="248" id="6Qi-Br-EEM"/>
-                            <constraint firstItem="Gdy-wi-7Q3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-111" id="Aba-cp-ge8"/>
-                            <constraint firstAttribute="trailing" secondItem="Gdy-wi-7Q3" secondAttribute="trailing" id="Hsu-T9-YAR"/>
-                            <constraint firstItem="Gdy-wi-7Q3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="150" id="ctk-4w-Qqc"/>
                             <constraint firstItem="W28-sz-MRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eNW-Vm-Nxk"/>
                             <constraint firstItem="W28-sz-MRT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-59" id="l22-mi-egf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W28-sz-MRT" secondAttribute="bottom" constant="-34" id="l8A-sB-SS7"/>
@@ -44,7 +37,6 @@
     </scenes>
     <resources>
         <image name="background" width="393" height="852"/>
-        <image name="backgroundplanets" width="413" height="839"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
