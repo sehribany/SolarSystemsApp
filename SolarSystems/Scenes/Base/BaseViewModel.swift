@@ -24,8 +24,10 @@ class BaseViewModel<R: Router>: BaseViewProtocol {
     var showLoading              : VoidClosure?
     var hideLoading              : VoidClosure?
     var showWarningToast         : StringClosure?
+    let dataProvider             : DataProviderProtocol
     
-    init(router: R){
-        self.router = router
+    init(router: R, dataProvider: DataProviderProtocol = apiDataProvider){
+        self.router       = router
+        self.dataProvider = dataProvider
     }
 }
