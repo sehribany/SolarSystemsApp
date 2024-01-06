@@ -1,0 +1,32 @@
+/* 
+  Planets.strings
+  SolarSystems
+
+  Created by Şehriban Yıldırım on 6.01.2024.
+  
+*/
+
+// MARK: - Planets
+"Mercury.Name"        = "Mercury";
+"Mercury.Title"       = "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its surface is filled with craters, and its temperatures vary greatly: It can reach up to 430°C during the day and drop to -180°C at night. It has almost no atmosphere, and its orbit is highly eccentric, sometimes very close and other times farther away from the Sun.";
+
+"Venus.Name"        = "Venus";
+"Venus.Title"       = "Venus, the Solar System's second planet, is known as the 'evening star' or 'morning star'. Its dense carbon dioxide-rich atmosphere maintains surface temperatures around 450°C. Despite surface volcanic traces, thick clouds hinder detailed observations. It also has a slow rotation and a smooth orbit.";
+
+"Earth.Name"        = "Earth";
+"Earth.Title"       = "Venus, the Solar System's second planet, is known as the 'evening star' or 'morning star'. Its dense carbon dioxide-rich atmosphere maintains surface temperatures around 450°C. Despite surface volcanic traces, thick clouds hinder detailed observations. It also has a slow rotation and a smooth orbit.";
+
+"Mars.Name"        = "Mars";
+"Mars.Title"       = "Venus, the Solar System's second planet, is known as the 'evening star' or 'morning star'. Its dense carbon dioxide-rich atmosphere maintains surface temperatures around 450°C. Despite surface volcanic traces, thick clouds hinder detailed observations. It also has a slow rotation and a smooth orbit.";
+
+"Jupiter.Name"        = "Jupiter";
+"Jupiter.Title"       = "Venus, the Solar System's second planet, is known as the 'evening star' or 'morning star'. Its dense carbon dioxide-rich atmosphere maintains surface temperatures around 450°C. Despite surface volcanic traces, thick clouds hinder detailed observations. It also has a slow rotation and a smooth orbit.";
+
+"Saturn.Name"        = "Saturn";
+"Saturn.Title"       = "Venus, the Solar System's second planet, is known as the 'evening star' or 'morning star'. Its dense carbon dioxide-rich atmosphere maintains surface temperatures around 450°C. Despite surface volcanic traces, thick clouds hinder detailed observations. It also has a slow rotation and a smooth orbit.";
+
+"Uranus.Name"        = "Uranus";
+"Uranus.Title"       = "Venus, the Solar System's second planet, is known as the 'evening star' or 'morning star'. Its dense carbon dioxide-rich atmosphere maintains surface temperatures around 450°C. Despite surface volcanic traces, thick clouds hinder detailed observations. It also has a slow rotation and a smooth orbit.";
+
+"Neptun.Name"        = "Neptun";
+"Neptun.Title"       = "Venus, the Solar System's second planet, is known as the 'evening star' or 'morning star'. Its dense carbon dioxide-rich atmosphere maintains surface temperatures around 450°C. Despite surface volcanic traces, thick clouds hinder detailed observations. It also has a slow rotation and a smooth orbit.";
