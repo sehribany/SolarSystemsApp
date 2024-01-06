@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.8.1)
   - Kingfisher (7.10.1)
   - MobilliumUserDefaults (2.0.0)
   - SwiftEntryKit (2.0.0)
@@ -6,6 +7,7 @@ PODS:
   - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
+  - Alamofire
   - Kingfisher
   - MobilliumUserDefaults
   - SwiftEntryKit
@@ -14,6 +16,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Kingfisher
     - MobilliumUserDefaults
     - SwiftEntryKit
@@ -21,12 +24,13 @@ SPEC REPOS:
     - TinyConstraints
 
 SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   Kingfisher: bc5abe80a8e0144537ef1dd5a0b2621b04f7f439
   MobilliumUserDefaults: 002aa4bb663127d2dcc0814c17430c918a1e1445
   SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: a131a29e0d02cb544f0020d4be8ab7963d8e24f3
+PODFILE CHECKSUM: a1394dd5d71f245d237cba4f7e80cb7e9ff5733f
 
 COCOAPODS: 1.11.3
