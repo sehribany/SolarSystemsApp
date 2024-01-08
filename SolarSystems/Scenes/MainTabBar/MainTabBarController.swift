@@ -12,9 +12,9 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureContents()
-        let homeViewController       = createHomeViewController()
-        let discoveryViewController  = createDiscoveryViewController()
-        viewControllers              = [homeViewController,discoveryViewController]
+        let homeViewController      = createHomeViewController()
+        let discoveryViewController = createDiscoveryViewController()
+        viewControllers             = [homeViewController,discoveryViewController]
     }
     
     private func configureTabBarIcons(navController: MainNavigationController, icon:UIImage?) {
@@ -37,12 +37,12 @@ class MainTabBarController: UITabBarController {
     }
     
     private func createDiscoveryViewController() -> UINavigationController{
-        let discoveryRouter             = DiscoveryRouter()
-        let discoveryViewModel          = DiscoveryViewModel(router: discoveryRouter)
-        let discoveryViewController     = DiscoveryViewController(viewModel: discoveryViewModel)
-        let navController               = MainNavigationController(rootViewController: discoveryViewController)
+        let discoveryRouter            = DiscoveryRouter()
+        let discoveryViewModel         = DiscoveryViewModel(router: discoveryRouter)
+        let discoveryViewController    = DiscoveryViewController(viewModel: discoveryViewModel)
+        let navController              = MainNavigationController(rootViewController: discoveryViewController)
         configureTabBarIcons(navController: navController, icon: Asset.Icons.icDiscovery.image)
-        discoveryRouter.viewController  = discoveryViewController
+        discoveryRouter.viewController = discoveryViewController
         return navController
     }
 }
