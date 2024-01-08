@@ -31,7 +31,12 @@ public enum FontFamily {
     public static let regular = FontConvertible(name: "Roboto-Regular", family: "Roboto", path: "Roboto-Regular.ttf")
     public static let all: [FontConvertible] = [bold, regular]
   }
-  public static let allCustomFonts: [FontConvertible] = [Montserrat.all, Roboto.all].flatMap { $0 }
+  public enum RoundedMplus1c {
+    public static let black = FontConvertible(name: "RoundedMplus1c-Black", family: "Rounded Mplus 1c", path: "MPLUSRounded1c-Black.ttf")
+    public static let regular = FontConvertible(name: "RoundedMplus1c-Regular", family: "Rounded Mplus 1c", path: "MPLUSRounded1c-Regular.ttf")
+    public static let all: [FontConvertible] = [black, regular]
+  }
+  public static let allCustomFonts: [FontConvertible] = [Montserrat.all, Roboto.all, RoundedMplus1c.all].flatMap { $0 }
   public static func registerAllCustomFonts() {
     allCustomFonts.forEach { $0.register() }
   }

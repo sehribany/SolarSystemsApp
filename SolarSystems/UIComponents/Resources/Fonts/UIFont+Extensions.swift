@@ -15,6 +15,8 @@ public extension UIFont{
         case montserratLight
         case robotoRegular
         case robotoBold
+        case roundedRegular
+        case roundedBlack
     }
     
     enum FontSize {
@@ -66,6 +68,10 @@ public extension UIFont{
             font = FontFamily.Roboto.regular.font(size: size.rawValue)
         case .robotoBold:
             font = FontFamily.Roboto.bold.font(size: size.rawValue)
+        case .roundedRegular:
+            font = FontFamily.RoundedMplus1c.regular.font(size: size.rawValue)
+        case .roundedBlack:
+            font = FontFamily.RoundedMplus1c.black.font(size: size.rawValue)
         }
         return font
     }
