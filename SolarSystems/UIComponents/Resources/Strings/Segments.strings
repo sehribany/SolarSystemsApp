@@ -1,0 +1,11 @@
+/* 
+  Segments.strings
+  SolarSystems
+
+  Created by Şehriban Yıldırım on 8.01.2024.
+  
+*/
+// MARK: - Segments
+"Segments.firstTitle"  = "Planet";
+"Segments.secondTitle" = "Dwarf Planet";
+"Segments.thirdTitle"  = "Celestial Bodie";
