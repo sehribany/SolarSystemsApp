@@ -17,15 +17,15 @@ protocol IntroViewProtocol: IntroViewDataSource, IntroViewEventSource {}
 
 final class IntroViewModel: BaseViewModel<IntroRouter>, IntroViewProtocol{
     
-    private var cellItems: [IntroCellProtocol] = [IntroCellModel(image: Asset.Images.introBackground1.image,
-                                                                 titleText: L10n.Intro.firstTitle,
-                                                                 descriptionText: L10n.Intro.fourthTitle),
-                                                  IntroCellModel(image: Asset.Images.introBackground2.image,
-                                                                 titleText: L10n.Intro.secondTitle,
-                                                                 descriptionText: L10n.Intro.fourthTitle),
-                                                  IntroCellModel(image: Asset.Images.introBackground3.image,
-                                                                 titleText: L10n.Intro.thirdTitle, 
-                                                                 descriptionText: L10n.Intro.fourthTitle)]
+    private var cellItems: [IntroCellProtocol] = [IntroCellModel(image: Asset.Images.earth.image,
+                                                                 titleText: L10n.Intro.Intro.firstTitle,
+                                                                 descriptionText: L10n.Intro.Intro.fourthTitle),
+                                                  IntroCellModel(image: Asset.Images.jupiter.image,
+                                                                 titleText: L10n.Intro.Intro.secondTitle,
+                                                                 descriptionText: L10n.Intro.Intro.fourthTitle),
+                                                  IntroCellModel(image: Asset.Images.saturn.image,
+                                                                 titleText: L10n.Intro.Intro.thirdTitle, 
+                                                                 descriptionText: L10n.Intro.Intro.fourthTitle)]
     
     func numberOfItemsAt(section: Int) -> Int {
         cellItems.count

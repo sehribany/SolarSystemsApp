@@ -117,7 +117,7 @@ extension IntroViewController{
         collectionView.dataSource            = self
         pageControl.isUserInteractionEnabled = false
         nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
-        nextButton.setTitle(L10n.Intro.next, for: .normal)
+        nextButton.setTitle(L10n.Intro.Intro.next, for: .normal)
         let longPressGesture                 = UILongPressGestureRecognizer(target: self, action: #selector(tappedLongGesture(_:)))
         nextButton.addGestureRecognizer(longPressGesture)
     }
@@ -198,9 +198,9 @@ extension IntroViewController: UICollectionViewDelegateFlowLayout {
         pageControl.currentPage = Int(scrollView.contentOffset.x / width)
         
         if pageControl.currentPage == viewModel.numberOfItemsAt(section: 0) - 1 {
-            nextButton.setTitle(L10n.Intro.start, for: .normal)
+            nextButton.setTitle(L10n.Intro.Intro.start, for: .normal)
         } else {
-            nextButton.setTitle(L10n.Intro.next, for: .normal)
+            nextButton.setTitle(L10n.Intro.Intro.next, for: .normal)
         }
     }
  }
