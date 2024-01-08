@@ -2,5 +2,6 @@ ${PODS_ROOT}/Target Support Files/Pods-SolarSystems/Pods-SolarSystems-frameworks
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/MobilliumUserDefaults/MobilliumUserDefaults.framework
+${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework
 ${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework
 ${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework

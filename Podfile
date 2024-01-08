@@ -6,10 +6,15 @@ target 'SolarSystems' do
   use_frameworks!
 
   # Pods for SolarSystems
+  
+  # Network
+  pod 'Alamofire'
+  
   # Helper
   pod 'SwiftGen'
   pod 'MobilliumUserDefaults'
   pod 'SwiftEntryKit'
   pod 'TinyConstraints'
   pod 'Kingfisher'
+  pod 'Segmentio'
 end
