@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980CF7802B4DBC8900AF0D9C /* DetailRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF77F2B4DBC8900AF0D9C /* DetailRoute.swift */; };
+		980CF7842B4DBC9800AF0D9C /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF7812B4DBC9800AF0D9C /* DetailRouter.swift */; };
+		980CF7852B4DBC9800AF0D9C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF7822B4DBC9800AF0D9C /* DetailViewController.swift */; };
+		980CF7862B4DBC9800AF0D9C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF7832B4DBC9800AF0D9C /* DetailViewModel.swift */; };
+		980CF78A2B4DC6AB00AF0D9C /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF7892B4DC6AB00AF0D9C /* PlanetDetailView.swift */; };
 		98355D432B3D93BD009D1926 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 98355D422B3D93BD009D1926 /* swiftgen.yml */; };
 		98355D482B3D94DD009D1926 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98355D472B3D94DD009D1926 /* Assets.swift */; };
 		98355D4C2B3D952A009D1926 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98355D4B2B3D952A009D1926 /* Fonts.swift */; };
@@ -98,6 +103,11 @@
 /* Begin PBXFileReference section */
 		85138217BEFE85E625D95659 /* Pods_SolarSystems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolarSystems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955B4617D86BD46A0C4E1C17 /* Pods-SolarSystems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarSystems.release.xcconfig"; path = "Target Support Files/Pods-SolarSystems/Pods-SolarSystems.release.xcconfig"; sourceTree = "<group>"; };
+		980CF77F2B4DBC8900AF0D9C /* DetailRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoute.swift; sourceTree = "<group>"; };
+		980CF7812B4DBC9800AF0D9C /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		980CF7822B4DBC9800AF0D9C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		980CF7832B4DBC9800AF0D9C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		980CF7892B4DC6AB00AF0D9C /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
 		98355D422B3D93BD009D1926 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		98355D472B3D94DD009D1926 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		98355D4B2B3D952A009D1926 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -208,6 +218,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		980CF77E2B4DBC7200AF0D9C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				980CF77F2B4DBC8900AF0D9C /* DetailRoute.swift */,
+				980CF7812B4DBC9800AF0D9C /* DetailRouter.swift */,
+				980CF7832B4DBC9800AF0D9C /* DetailViewModel.swift */,
+				980CF7822B4DBC9800AF0D9C /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		980CF7882B4DC68E00AF0D9C /* PlanetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				980CF7892B4DC6AB00AF0D9C /* PlanetDetailView.swift */,
+			);
+			path = PlanetDetail;
+			sourceTree = "<group>";
+		};
 		981EB5842B48B432004488A2 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +343,7 @@
 				986CC3F12B4B4EC4008D26D7 /* Planet */,
 				986CC3F22B4B4EFB008D26D7 /* DwarfPlanet */,
 				986CC3F32B4B4FCB008D26D7 /* CelestialBodies */,
+				980CF77E2B4DBC7200AF0D9C /* Detail */,
 				98D233D32B46DAA400DDB4BF /* Discovery */,
 			);
 			path = Scenes;
@@ -531,6 +561,7 @@
 			children = (
 				981EB5842B48B432004488A2 /* MainTabBar */,
 				98D234102B48AA4A00DDB4BF /* PlanetCard */,
+				980CF7882B4DC68E00AF0D9C /* PlanetDetail */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -781,6 +812,7 @@
 			files = (
 				98D2340F2B48AA4100DDB4BF /* PlanetCardView.swift in Sources */,
 				98BDE2852B44B97300948BD6 /* UIImageView+Extensions.swift in Sources */,
+				980CF7802B4DBC8900AF0D9C /* DetailRoute.swift in Sources */,
 				9844C9342B3C615C000D7602 /* AppDelegate.swift in Sources */,
 				98D233D52B46DAB800DDB4BF /* HomeRoute.swift in Sources */,
 				98D233FF2B48A6CC00DDB4BF /* APIDataProvider.swift in Sources */,
@@ -791,6 +823,7 @@
 				9841442C2B436ED10054CF3D /* Router.swift in Sources */,
 				986CC4002B4B59F4008D26D7 /* DwarfPlanetRoute.swift in Sources */,
 				98355D482B3D94DD009D1926 /* Assets.swift in Sources */,
+				980CF78A2B4DC6AB00AF0D9C /* PlanetDetailView.swift in Sources */,
 				98D233D12B46D38100DDB4BF /* MainTabBar.swift in Sources */,
 				986CC3FE2B4B5930008D26D7 /* SegmentioOptions+Extensions.swift in Sources */,
 				986CC3F82B4B5051008D26D7 /* PlanetRouter.swift in Sources */,
@@ -833,6 +866,7 @@
 				98D233EB2B4823C500DDB4BF /* PlanetCell.swift in Sources */,
 				9844C9692B3C888A000D7602 /* IntroViewModel.swift in Sources */,
 				98D233EF2B484E2200DDB4BF /* Planets.swift in Sources */,
+				980CF7842B4DBC9800AF0D9C /* DetailRouter.swift in Sources */,
 				98BDE2832B4430AA00948BD6 /* IntroCellModel.swift in Sources */,
 				984144392B4370800054CF3D /* IntroRoute.swift in Sources */,
 				98D233EC2B4823C500DDB4BF /* PlanetCellModel.swift in Sources */,
@@ -840,6 +874,7 @@
 				98D234032B48A70200DDB4BF /* APIDecodableResponseRequest.swift in Sources */,
 				98BDE27D2B442E1D00948BD6 /* UIImage+Extensions.swift in Sources */,
 				98D233FA2B48A63100DDB4BF /* DecodableResponseRequest.swift in Sources */,
+				980CF7852B4DBC9800AF0D9C /* DetailViewController.swift in Sources */,
 				98D233F62B48538B00DDB4BF /* RequestEncoding.swift in Sources */,
 				98D234012B48A6EB00DDB4BF /* APIRequestAdapter.swift in Sources */,
 				986CC4042B4B5A18008D26D7 /* DwarfPlanetRouter.swift in Sources */,
@@ -848,6 +883,7 @@
 				98BDE2812B44307F00948BD6 /* IntroCell.swift in Sources */,
 				986CC40C2B4B5E49008D26D7 /* CelestialBodiesRouter.swift in Sources */,
 				98BDE2782B44284300948BD6 /* TostWarningView.swift in Sources */,
+				980CF7862B4DBC9800AF0D9C /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
