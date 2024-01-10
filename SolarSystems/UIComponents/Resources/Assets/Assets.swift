@@ -57,6 +57,7 @@ public enum Asset {
   }
   public enum Images {
     public static let earth = ImageAsset(name: "Earth")
+    public static let homeScreen = ImageAsset(name: "HomeScreen")
     public static let introBackground = ImageAsset(name: "IntroBackground")
     public static let jupiter = ImageAsset(name: "Jupiter")
     public static let mars = ImageAsset(name: "Mars")
