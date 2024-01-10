@@ -27,7 +27,7 @@ public class PlanetCell: UICollectionViewCell, ReusableView {
     
     private let circleView: UIView = {
         let view = UIView()
-        view.backgroundColor = Asset.Colors.appWhite.color
+        view.backgroundColor = Asset.Colors.appWhite.color.withAlphaComponent(0.6)
         return view
     }()
     

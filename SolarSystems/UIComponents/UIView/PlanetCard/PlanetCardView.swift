@@ -20,7 +20,7 @@ class PlanetCardView: UIView {
         let label                       = UILabel()
         label.font                      = UIFont.font(.roundedRegular, size: .medium)
         label.textAlignment             = .left
-        label.textColor                 = .appGray
+        label.textColor                 = .appDark
         label.numberOfLines             = 0
         label.adjustsFontSizeToFitWidth = true
         return label
@@ -64,7 +64,7 @@ extension PlanetCardView{
 // MARK: - Configure and Set Localize
 extension PlanetCardView {
     private func configureContents(){
-        backgroundColor    = Asset.Colors.appWhite.color
+        backgroundColor    = Asset.Colors.appWhite.color.withAlphaComponent(0.6)
         layer.cornerRadius = 30
     }
 }
