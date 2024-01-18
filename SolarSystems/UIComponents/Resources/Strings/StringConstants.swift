@@ -58,8 +58,8 @@ public enum L10n {
       public static let title = L10n.tr("Planets", "Mercury.Title", fallback: "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its surface is filled with craters, and its temperatures vary greatly: It can reach up to 430°C during the day and drop to -180°C at night. It has almost no atmosphere, and its orbit is highly eccentric, sometimes very close and other times farther away from the Sun.")
     }
     public enum Neptun {
-      /// Neptun
-      public static let name = L10n.tr("Planets", "Neptun.Name", fallback: "Neptun")
+      /// Neptune
+      public static let name = L10n.tr("Planets", "Neptun.Name", fallback: "Neptune")
       /// Neptune is the eighth and farthest planet in the Solar System. It is known as a gas giant. Its blue-colored atmosphere is composed of methane. The strongest winds are observed here. A giant dark spot known as the Great Dark Spot is a prominent feature. Triton, an unusually retrograde moon, is Neptune's largest moon. It has rings, but they are faint and difficult to observe.
       public static let title = L10n.tr("Planets", "Neptun.Title", fallback: "Neptune is the eighth and farthest planet in the Solar System. It is known as a gas giant. Its blue-colored atmosphere is composed of methane. The strongest winds are observed here. A giant dark spot known as the Great Dark Spot is a prominent feature. Triton, an unusually retrograde moon, is Neptune's largest moon. It has rings, but they are faint and difficult to observe.")
     }

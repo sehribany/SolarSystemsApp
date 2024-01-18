@@ -66,6 +66,7 @@ public enum Asset {
     public static let saturn = ImageAsset(name: "Saturn")
     public static let uranus = ImageAsset(name: "Uranus")
     public static let venus = ImageAsset(name: "Venus")
+    public static let detailBackground = ImageAsset(name: "detailBackground")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
