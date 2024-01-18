@@ -15,11 +15,9 @@ final class DetailViewController: BaseViewController<DetailViewModel> {
         super.viewDidLoad()
         view.backgroundColor = .appOrange1
         addSubView()
-        configure()
         viewModel.fetchPlanets()
-        
+        set()
     }
-    
 }
 
 // MARK: - UILayout
@@ -29,7 +27,7 @@ extension DetailViewController{
         planetDetailView.edgesToSuperview()
     }
     
-    private func configure(){
+    private func set(){
         planetDetailView.nameLabel.text = viewModel.planetDetail?.englishName
     }
 }
