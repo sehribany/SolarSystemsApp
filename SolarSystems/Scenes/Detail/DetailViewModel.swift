@@ -20,6 +20,7 @@ protocol DetailViewProtocol: DetailViewDataSource, DetailViewEventSource {}
 
 final class DetailViewModel: BaseViewModel<DetailRouter>, DetailViewProtocol {
 
+    var cellItems             : [PlanetDetailViewModel] = []
     var planetDetail          : Planets?
     var didSuccessFetchPlanets: VoidClosure?
     var planetName            : String
@@ -39,15 +40,15 @@ extension DetailViewModel{
     func fetchPlanets(){
         let request = GetSolarRequest(page: page, solarName: planetName)
         self.isRequestEnabled = false
-        
         if page == 1 {showActivityIndicatorView?()}
         dataProvider.request(for: request) { [weak self] result in
             guard let self = self else {return}
             self.hideActivityIndicatorView?()
             self.isRequestEnabled = true
-            switch result {
+            switch result{
             case.success(let response):
-               
+                let items = response.map({PlanetDetailViewModel(planet: $0)})
+                self.cellItems.append(contentsOf: items)
                 self.page += 1
                 self.didSuccessFetchPlanets?()
             case .failure(let error):
