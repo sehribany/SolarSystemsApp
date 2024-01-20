@@ -7,6 +7,8 @@
 
 import Foundation
 
+import Foundation
+
 protocol PlanetViewDataSource {
     func numberOfItemsAt(section: Int) -> Int
     func cellItemAt(indexPath: IndexPath) -> PlanetCellProtocol

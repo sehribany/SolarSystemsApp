@@ -11,7 +11,6 @@
 		980CF7842B4DBC9800AF0D9C /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF7812B4DBC9800AF0D9C /* DetailRouter.swift */; };
 		980CF7852B4DBC9800AF0D9C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF7822B4DBC9800AF0D9C /* DetailViewController.swift */; };
 		980CF7862B4DBC9800AF0D9C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF7832B4DBC9800AF0D9C /* DetailViewModel.swift */; };
-		980CF78A2B4DC6AB00AF0D9C /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980CF7892B4DC6AB00AF0D9C /* PlanetDetailView.swift */; };
 		98355D432B3D93BD009D1926 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 98355D422B3D93BD009D1926 /* swiftgen.yml */; };
 		98355D482B3D94DD009D1926 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98355D472B3D94DD009D1926 /* Assets.swift */; };
 		98355D4C2B3D952A009D1926 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98355D4B2B3D952A009D1926 /* Fonts.swift */; };
@@ -107,7 +106,6 @@
 		980CF7812B4DBC9800AF0D9C /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		980CF7822B4DBC9800AF0D9C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		980CF7832B4DBC9800AF0D9C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		980CF7892B4DC6AB00AF0D9C /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
 		98355D422B3D93BD009D1926 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		98355D472B3D94DD009D1926 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		98355D4B2B3D952A009D1926 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -227,14 +225,6 @@
 				980CF7822B4DBC9800AF0D9C /* DetailViewController.swift */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		980CF7882B4DC68E00AF0D9C /* PlanetDetail */ = {
-			isa = PBXGroup;
-			children = (
-				980CF7892B4DC6AB00AF0D9C /* PlanetDetailView.swift */,
-			);
-			path = PlanetDetail;
 			sourceTree = "<group>";
 		};
 		981EB5842B48B432004488A2 /* MainTabBar */ = {
@@ -561,7 +551,6 @@
 			children = (
 				981EB5842B48B432004488A2 /* MainTabBar */,
 				98D234102B48AA4A00DDB4BF /* PlanetCard */,
-				980CF7882B4DC68E00AF0D9C /* PlanetDetail */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -823,7 +812,6 @@
 				9841442C2B436ED10054CF3D /* Router.swift in Sources */,
 				986CC4002B4B59F4008D26D7 /* DwarfPlanetRoute.swift in Sources */,
 				98355D482B3D94DD009D1926 /* Assets.swift in Sources */,
-				980CF78A2B4DC6AB00AF0D9C /* PlanetDetailView.swift in Sources */,
 				98D233D12B46D38100DDB4BF /* MainTabBar.swift in Sources */,
 				986CC3FE2B4B5930008D26D7 /* SegmentioOptions+Extensions.swift in Sources */,
 				986CC3F82B4B5051008D26D7 /* PlanetRouter.swift in Sources */,
