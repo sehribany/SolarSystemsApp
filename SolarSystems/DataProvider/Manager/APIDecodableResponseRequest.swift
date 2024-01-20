@@ -22,7 +22,7 @@ public extension APIDecodableResponseRequest {
 // MARK: - url
 public extension APIDecodableResponseRequest {
     var url: String {
-        return "https://api.le-systeme-solaire.net/rest/bodies" + path
+        return "https://planets-17f2.onrender.com/planets/getPlanet?name=" + path
     }
 }
 
