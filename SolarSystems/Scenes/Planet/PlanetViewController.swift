@@ -33,6 +33,7 @@ final class PlanetViewController: BaseViewController<PlanetViewModel> {
         navigationController?.setNavigationBarHidden(true, animated: false)
         addSubViews()
         configureContents()
+        
     }
 }
 // MARK: - UILayout
@@ -80,7 +81,9 @@ extension PlanetViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        viewModel.fetchPlanets(forSelectedIndex: indexPath.row) { [weak self] in                
+            self?.viewModel.showPlanetsDetail(at: indexPath)
+        }
     }
 }
 
