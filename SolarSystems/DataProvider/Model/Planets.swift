@@ -8,7 +8,7 @@
 
 // MARK: - Planets
 public struct Planets: Codable {
-    let name, tagline: String
+    var name, tagline: String
     let tagline_icon: String
     let picture, textureUrl: String
     let description, distanceFromSun, yearLength: String
@@ -16,7 +16,6 @@ public struct Planets: Codable {
     let namesake: String
     let rings: Rings
     let spaceTexture_url: String
-
 }
 
 // MARK: - Rings
