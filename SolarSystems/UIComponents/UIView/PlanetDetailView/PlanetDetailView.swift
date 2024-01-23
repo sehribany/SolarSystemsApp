@@ -7,14 +7,51 @@
 
 import UIKit
 
-class PlanetDetailView: UIView {
+public class PlanetDetailView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    public let imageView: UIImageView = {
+        let imageView         = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
+    public let titleLabel: UILabel = {
+        let label       = UILabel()
+        label.textColor = .appDark
+        return label
+    }()
+
+    weak var viewModel: PlanetDetailViewProtocol?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubViews()
     }
-    */
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        addSubViews()
+    }
+}
 
+//MARK: - UILayout
+extension PlanetDetailView{
+    private func addSubViews(){
+        addImageView()
+        addTitle()
+    }
+    
+    private func addImageView(){
+        addSubview(imageView)
+        imageView.leftToSuperview().constant = 10
+        imageView.centerYToSuperview()
+        imageView.width(100)
+        imageView.height(100)
+    }
+    
+    private func addTitle(){
+        addSubview(titleLabel)
+        titleLabel.leftToSuperview().constant          = 10
+        titleLabel.topToBottom(of: imageView).constant = 10
+    }
 }
