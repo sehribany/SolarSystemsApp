@@ -6,7 +6,7 @@
 //
 
 public struct GetSolarRequest: APIDecodableResponseRequest{
-    public typealias ResponseType = [Planets]
+    public typealias ResponseType = Planets
 
     public var path      : String            = ""
     public var method    : RequestMethod     = .get
@@ -15,6 +15,6 @@ public struct GetSolarRequest: APIDecodableResponseRequest{
 
     public init(page: Int, solarName: String){
         self.parameters["page"] = page
-        self.path = "/\(solarName)"
+        self.path = "\(solarName)"
     }
 }
