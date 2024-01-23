@@ -44,6 +44,7 @@
 		9844C9742B3CB365000D7602 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9844C9732B3CB365000D7602 /* Montserrat-Light.ttf */; };
 		9844C9762B3CB37B000D7602 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9844C9752B3CB37B000D7602 /* Montserrat-ExtraBold.ttf */; };
 		9844C9782B3CB388000D7602 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9844C9772B3CB388000D7602 /* Montserrat-ExtraLight.ttf */; };
+		984737382B5C5EA9004FB9FD /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984737372B5C5EA9004FB9FD /* PlanetDetailView.swift */; };
 		986CC3F82B4B5051008D26D7 /* PlanetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986CC3F52B4B5051008D26D7 /* PlanetRouter.swift */; };
 		986CC3F92B4B5051008D26D7 /* PlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986CC3F62B4B5051008D26D7 /* PlanetViewController.swift */; };
 		986CC3FA2B4B5051008D26D7 /* PlanetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986CC3F72B4B5051008D26D7 /* PlanetViewModel.swift */; };
@@ -96,6 +97,8 @@
 		98D2340B2B48A8A600DDB4BF /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D2340A2B48A8A600DDB4BF /* APILogger.swift */; };
 		98D2340D2B48A8BC00DDB4BF /* APIRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D2340C2B48A8BC00DDB4BF /* APIRequestInterceptor.swift */; };
 		98D2340F2B48AA4100DDB4BF /* PlanetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D2340E2B48AA4100DDB4BF /* PlanetCardView.swift */; };
+		98E921DC2B6013F400FD2CF3 /* PlanetTitleCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E921DB2B6013F400FD2CF3 /* PlanetTitleCellModel.swift */; };
+		98E921DE2B6057F200FD2CF3 /* PlanetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E921DD2B6057F200FD2CF3 /* PlanetDetailViewModel.swift */; };
 		FE9EDBA43917114174BA8D32 /* Pods_SolarSystems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85138217BEFE85E625D95659 /* Pods_SolarSystems.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +144,7 @@
 		9844C9732B3CB365000D7602 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		9844C9752B3CB37B000D7602 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		9844C9772B3CB388000D7602 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		984737372B5C5EA9004FB9FD /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
 		986CC3F52B4B5051008D26D7 /* PlanetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRouter.swift; sourceTree = "<group>"; };
 		986CC3F62B4B5051008D26D7 /* PlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewController.swift; sourceTree = "<group>"; };
 		986CC3F72B4B5051008D26D7 /* PlanetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModel.swift; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 		98D2340A2B48A8A600DDB4BF /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
 		98D2340C2B48A8BC00DDB4BF /* APIRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestInterceptor.swift; sourceTree = "<group>"; };
 		98D2340E2B48AA4100DDB4BF /* PlanetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCardView.swift; sourceTree = "<group>"; };
+		98E921DB2B6013F400FD2CF3 /* PlanetTitleCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTitleCellModel.swift; sourceTree = "<group>"; };
+		98E921DD2B6057F200FD2CF3 /* PlanetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewModel.swift; sourceTree = "<group>"; };
 		B67FCA9388A3D4953553FB41 /* Pods-SolarSystems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarSystems.debug.xcconfig"; path = "Target Support Files/Pods-SolarSystems/Pods-SolarSystems.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -468,6 +474,15 @@
 			path = Intro;
 			sourceTree = "<group>";
 		};
+		984737342B5C5E78004FB9FD /* PlanetDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				98E921DD2B6057F200FD2CF3 /* PlanetDetailViewModel.swift */,
+				984737372B5C5EA9004FB9FD /* PlanetDetailView.swift */,
+			);
+			path = PlanetDetailView;
+			sourceTree = "<group>";
+		};
 		986CC3F12B4B4EC4008D26D7 /* Planet */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +566,7 @@
 			children = (
 				981EB5842B48B432004488A2 /* MainTabBar */,
 				98D234102B48AA4A00DDB4BF /* PlanetCard */,
+				984737342B5C5E78004FB9FD /* PlanetDetailView */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -581,6 +597,7 @@
 			isa = PBXGroup;
 			children = (
 				98D233EA2B4823C500DDB4BF /* PlanetCellModel.swift */,
+				98E921DB2B6013F400FD2CF3 /* PlanetTitleCellModel.swift */,
 				98D233E92B4823C500DDB4BF /* PlanetCell.swift */,
 			);
 			path = Planet;
@@ -831,6 +848,7 @@
 				98D233E32B46DAE600DDB4BF /* DiscoveryViewModel.swift in Sources */,
 				98D233F82B48539F00DDB4BF /* RequestProtocol.swift in Sources */,
 				9844C95C2B3C859A000D7602 /* ReusableView.swift in Sources */,
+				984737382B5C5EA9004FB9FD /* PlanetDetailView.swift in Sources */,
 				98BDE27A2B4428E300948BD6 /* UIFont+Extensions.swift in Sources */,
 				986CC3F92B4B5051008D26D7 /* PlanetViewController.swift in Sources */,
 				9841442A2B436EBC0054CF3D /* Animator.swift in Sources */,
@@ -851,12 +869,14 @@
 				98BDE2762B4427DE00948BD6 /* ToastPresenter.swift in Sources */,
 				984144312B436F520054CF3D /* PlaceOnWindowTransition.swift in Sources */,
 				986CC40E2B4B5E49008D26D7 /* CelestialBodiesViewModel.swift in Sources */,
+				98E921DE2B6057F200FD2CF3 /* PlanetDetailViewModel.swift in Sources */,
 				98D233EB2B4823C500DDB4BF /* PlanetCell.swift in Sources */,
 				9844C9692B3C888A000D7602 /* IntroViewModel.swift in Sources */,
 				98D233EF2B484E2200DDB4BF /* Planets.swift in Sources */,
 				980CF7842B4DBC9800AF0D9C /* DetailRouter.swift in Sources */,
 				98BDE2832B4430AA00948BD6 /* IntroCellModel.swift in Sources */,
 				984144392B4370800054CF3D /* IntroRoute.swift in Sources */,
+				98E921DC2B6013F400FD2CF3 /* PlanetTitleCellModel.swift in Sources */,
 				98D233EC2B4823C500DDB4BF /* PlanetCellModel.swift in Sources */,
 				9844C9552B3C8493000D7602 /* BaseViewModel.swift in Sources */,
 				98D234032B48A70200DDB4BF /* APIDecodableResponseRequest.swift in Sources */,
