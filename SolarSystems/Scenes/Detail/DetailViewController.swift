@@ -9,25 +9,32 @@ import UIKit
 
 final class DetailViewController: BaseViewController<DetailViewModel> {
     
-    private let planetDetailView = PlanetDetailView()
+    private let detailCardView = PlanetDetailView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .appOrange1
-        addSubView()
-        viewModel.fetchPlanets()
+        addSubViews()
         set()
     }
 }
-
 // MARK: - UILayout
-extension DetailViewController{
-    private func addSubView(){
-        view.addSubview(planetDetailView)
-        planetDetailView.edgesToSuperview()
+extension DetailViewController {
+    
+    private func addSubViews() {
+        addDetailView()
     }
     
-    private func set(){
-        planetDetailView.nameLabel.text = viewModel.planetDetail?.englishName
+    private func addDetailView() {
+        view.addSubview(detailCardView)
+        detailCardView.edgesToSuperview()
+    }
+}
+
+// MARK: - Configure and Set Localize
+extension DetailViewController {
+    public func set() {
+        detailCardView.titleLabel.text = viewModel.planetDetail.name
+        detailCardView.imageView.setImage(viewModel.planetDetail.picture)
     }
 }

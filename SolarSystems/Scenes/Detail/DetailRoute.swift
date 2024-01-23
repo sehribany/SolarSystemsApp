@@ -8,13 +8,13 @@
 import Foundation
 
 protocol DetailRoute{
-    func pushPlanetDetail(planetName: String)
+    func pushPlanetDetail(planetDetail: Planets)
 }
 
 extension DetailRoute where Self: RouterProtocol{
-    func pushPlanetDetail(planetName: String){
+    func pushPlanetDetail(planetDetail: Planets){
         let router         = DetailRouter()
-        let viewModel      = DetailViewModel(planetName: planetName, router: router)
+        let viewModel      = DetailViewModel(planetDetail: planetDetail, router: router)
         let viewController = DetailViewController(viewModel: viewModel)
         
         let transition        = PushTransition()

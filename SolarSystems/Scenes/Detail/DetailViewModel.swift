@@ -5,55 +5,19 @@
 //  Created by Şehriban Yıldırım on 9.01.2024.
 //
 
-import Foundation
-
 protocol DetailViewDataSource {
-    var planetDetail: Planets? {get}
-    var planetName  : String { get}
+    var planetDetail: Planets {get}
 }
 
-protocol DetailViewEventSource {
-    var didSuccessFetchPlanets: VoidClosure? { get set }
-}
+protocol DetailViewEventSource {}
 
 protocol DetailViewProtocol: DetailViewDataSource, DetailViewEventSource {}
 
 final class DetailViewModel: BaseViewModel<DetailRouter>, DetailViewProtocol {
-
-    var cellItems             : [PlanetDetailViewModel] = []
-    var planetDetail          : Planets?
-    var didSuccessFetchPlanets: VoidClosure?
-    var planetName            : String
+    var planetDetail: Planets
     
-    private var page     = 1
-    var isRequestEnabled = false
-    var isPagingEnabled  = false
-    
-    init(planetName: String,router: DetailRouter) {
-        self.planetName = planetName
+    init(planetDetail: Planets, router: DetailRouter) {
+        self.planetDetail = planetDetail
         super.init(router: router)
-    }
-}
-
-// MARK: - Network
-extension DetailViewModel{
-    func fetchPlanets(){
-        let request = GetSolarRequest(page: page, solarName: planetName)
-        self.isRequestEnabled = false
-        if page == 1 {showActivityIndicatorView?()}
-        dataProvider.request(for: request) { [weak self] result in
-            guard let self = self else {return}
-            self.hideActivityIndicatorView?()
-            self.isRequestEnabled = true
-            switch result{
-            case.success(let response):
-                let items = response.map({PlanetDetailViewModel(planet: $0)})
-                self.cellItems.append(contentsOf: items)
-                self.page += 1
-                self.didSuccessFetchPlanets?()
-            case .failure(let error):
-                print("\(error.localizedDescription)")
-            }
-        }
     }
 }
