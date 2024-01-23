@@ -18,7 +18,6 @@ public protocol PlanetCellEventSource: AnyObject {}
 public protocol PlanetCellProtocol: PlanetCellDataSource, PlanetCellEventSource {}
 
 public final class PlanetCellModel: PlanetCellProtocol {
-    
     public var image           : UIImage
     public var titleText       : String
     public var descriptionText : String
