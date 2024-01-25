@@ -10,24 +10,44 @@ import UIKit
 class MainTabBar: UITabBar {
 
     private var shapeLayer: CALayer?
-    
-    override func draw(_ rect: CGRect) {
-        let ovalRect = CGRect(x: 20, y: -15, width: bounds.width - 40, height: 65)
-        let maskPath = UIBezierPath(roundedRect: ovalRect, cornerRadius: 35).cgPath
-
-        let maskLayer  = CAShapeLayer()
-        maskLayer.path = maskPath
-        layer.mask     = maskLayer
-
-        let shapeLayer         = CAShapeLayer()
-        shapeLayer.path        = maskPath
-        shapeLayer.strokeColor = Asset.Colors.appWhite.color.cgColor
-        shapeLayer.fillColor   = UIColor.clear.cgColor
-
-
-        if let sublayers = layer.sublayers, sublayers.contains(shapeLayer) {
-            shapeLayer.removeFromSuperlayer()
+        private var selectedTabIndex: Int = 1
+        
+        override func draw(_ rect: CGRect) {
+            super.draw(rect)
+            layoutSubviews()
         }
-        layer.insertSublayer(shapeLayer, at: 0)
-    }
+
+        override func layoutSubviews() {
+            super.layoutSubviews()
+
+            guard let selectedItem = selectedItem else { return }
+            
+            if let itemIndex = tabBarItemsIndex(for: selectedItem), selectedTabIndex != itemIndex {
+                selectedTabIndex = itemIndex
+                updateSelectedTab()
+            }
+        }
+
+        private func updateSelectedTab() {
+            guard let selectedItem = selectedItem else { return }
+            guard let index = tabBarItemsIndex(for: selectedItem) else { return }
+
+            let itemWidth = frame.width / CGFloat(items?.count ?? 1)
+            let xPosition = itemWidth * CGFloat(index)
+
+            shapeLayer?.removeFromSuperlayer()
+
+            let selectedTabRect = CGRect(x: xPosition, y: 0, width: itemWidth, height: 2)
+            let selectedTabLayer = CALayer()
+            selectedTabLayer.frame = selectedTabRect
+            selectedTabLayer.backgroundColor = Asset.Colors.appMars.color.cgColor
+
+            layer.addSublayer(selectedTabLayer)
+            shapeLayer = selectedTabLayer
+        }
+
+        private func tabBarItemsIndex(for item: UITabBarItem) -> Int? {
+            guard let items = items else { return nil }
+            return items.firstIndex(of: item)
+        }
 }
