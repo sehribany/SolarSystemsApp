@@ -7,10 +7,11 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
+class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        delegate = self
         configureContents()
         let homeViewController      = createHomeViewController()
         let discoveryViewController = createDiscoveryViewController()
@@ -45,4 +46,10 @@ class MainTabBarController: UITabBarController {
         discoveryRouter.viewController = discoveryViewController
         return navController
     }
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+            if let mainTabBar = tabBar as? MainTabBar {
+                mainTabBar.setNeedsLayout()
+            }
+        }
 }

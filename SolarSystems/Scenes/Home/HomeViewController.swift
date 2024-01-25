@@ -35,8 +35,6 @@ extension HomeViewController {
         view.addSubview(segmentView)
         segmentView.height(45)
         segmentView.layer.cornerRadius  = 15
-        segmentView.layer.borderWidth   = 0.8
-        segmentView.layer.borderColor   = Asset.Colors.appGray.color.cgColor
         segmentView.layer.masksToBounds = true
         segmentView.edgesToSuperview(excluding: .bottom, insets: UIEdgeInsets(top: 45, left: 12, bottom: 0, right: 12), usingSafeArea: false)
     }

@@ -30,10 +30,12 @@ final class PlanetViewController: BaseViewController<PlanetViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundDraw()
-        navigationController?.setNavigationBarHidden(true, animated: false)
         addSubViews()
         configureContents()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.tabBar.isHidden = false
     }
 }
 // MARK: - UILayout

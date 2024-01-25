@@ -88,7 +88,7 @@ extension PlanetViewModel{
             
         let selectedCellItem = cellItems[index]
         let titleText = selectedCellItem.titleText
-        let request = GetSolarRequest(page: page, solarName: titleText)
+        let request = GetPlanetsRequest(page: page, solarName: titleText)
         self.isRequestEnabled = false
             
         if page == 1 {showActivityIndicatorView?()}
