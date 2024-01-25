@@ -18,19 +18,7 @@ public class PlanetCell: UICollectionViewCell, ReusableView {
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
-    
-    private let detailButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setImage(Asset.Icons.icGo.image, for: .normal)
-        return button
-    }()
-    
-    private let circleView: UIView = {
-        let view = UIView()
-        view.backgroundColor = Asset.Colors.appWhite.color.withAlphaComponent(0.6)
-        return view
-    }()
-    
+        
     weak var viewModel: PlanetCellProtocol?
     
     override init(frame: CGRect) {
@@ -57,26 +45,9 @@ public class PlanetCell: UICollectionViewCell, ReusableView {
 extension PlanetCell{
     private func addSubViews(){
         addView()
-        addCircleView()
-        addButton()
         addImageView()
     }
-    
-    private func addCircleView(){
-        addSubview(circleView)
-        circleView.centerXToSuperview()
-        circleView.bottomToSuperview()
-        circleView.width(80)
-        circleView.height(80)
-        circleView.layer.cornerRadius = 40
         
-    }
-    
-    private func addButton(){
-        circleView.addSubview(detailButton)
-        detailButton.edgesToSuperview()
-    }
-    
     private func addView(){
         addSubview(planetCard)
         planetCard.topToSuperview().constant      = 157
