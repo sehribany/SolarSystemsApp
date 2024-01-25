@@ -13,7 +13,7 @@ final class DetailViewController: BaseViewController<DetailViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .appOrange1
+        tabBarController?.tabBar.isHidden = true
         addSubViews()
         set()
     }
@@ -28,13 +28,25 @@ extension DetailViewController {
     private func addDetailView() {
         view.addSubview(detailCardView)
         detailCardView.edgesToSuperview()
+        configure()
     }
 }
 
 // MARK: - Configure and Set Localize
 extension DetailViewController {
+    
+    public func configure(){
+        detailCardView.cardView.backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc private func backButtonTapped() {
+        navigationController?.popViewController(animated: true)
+    }
+    
     public func set() {
+        detailCardView.backGround.image = Asset.Images.starsBackground.image
+        detailCardView.cardView.imageView.setImage(viewModel.planetDetail.picture)
         detailCardView.titleLabel.text = viewModel.planetDetail.name
-        detailCardView.imageView.setImage(viewModel.planetDetail.picture)
+        detailCardView.descriptionLabel.text = viewModel.planetDetail.description
     }
 }

@@ -5,7 +5,7 @@
 //  Created by Şehriban Yıldırım on 6.01.2024.
 //
 
-public struct GetSolarRequest: APIDecodableResponseRequest{
+public struct GetPlanetsRequest: APIDecodableResponseRequest{
     public typealias ResponseType = Planets
 
     public var path      : String            = ""
