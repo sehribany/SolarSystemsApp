@@ -58,13 +58,18 @@
 		986CC40C2B4B5E49008D26D7 /* CelestialBodiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986CC4092B4B5E49008D26D7 /* CelestialBodiesRouter.swift */; };
 		986CC40D2B4B5E49008D26D7 /* CelestialBodiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986CC40A2B4B5E49008D26D7 /* CelestialBodiesViewController.swift */; };
 		986CC40E2B4B5E49008D26D7 /* CelestialBodiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986CC40B2B4B5E49008D26D7 /* CelestialBodiesViewModel.swift */; };
+		98727C5B2B658C72001BDAD3 /* GetPlanetsDiscoveryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98727C5A2B658C72001BDAD3 /* GetPlanetsDiscoveryRequest.swift */; };
+		98727C5E2B658FEE001BDAD3 /* DiscoveryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98727C5D2B658FEE001BDAD3 /* DiscoveryCellViewModel.swift */; };
+		98727C602B6590ED001BDAD3 /* DiscoveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98727C5F2B6590ED001BDAD3 /* DiscoveryCell.swift */; };
+		98727C6B2B6599FC001BDAD3 /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98727C6A2B6599FC001BDAD3 /* HeaderViewModel.swift */; };
+		98727C6D2B659AA8001BDAD3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98727C6C2B659AA8001BDAD3 /* HeaderView.swift */; };
+		98727C6F2B659B56001BDAD3 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98727C6E2B659B56001BDAD3 /* UILabel+Extensions.swift */; };
 		9875E1A32B4C5284006BA3E9 /* Segments.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9875E1A22B4C5284006BA3E9 /* Segments.strings */; };
 		9875E1A82B4C88DF006BA3E9 /* MPLUSRounded1c-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9875E1A72B4C88DF006BA3E9 /* MPLUSRounded1c-Regular.ttf */; };
 		9875E1B12B4C8C10006BA3E9 /* MPLUSRounded1c-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9875E1B02B4C8C10006BA3E9 /* MPLUSRounded1c-Black.ttf */; };
 		98780C672B49E80700C7C46B /* Planets.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98780C662B49E80700C7C46B /* Planets.strings */; };
 		98780C692B49E80D00C7C46B /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98780C682B49E80D00C7C46B /* StringConstants.swift */; };
 		989E2C602B61348C00E84461 /* Solars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989E2C5F2B61348C00E84461 /* Solars.swift */; };
-		989E2C632B613ED100E84461 /* PlanetDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989E2C622B613ED100E84461 /* PlanetDetailCell.swift */; };
 		989E2C652B613FBF00E84461 /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989E2C642B613FBF00E84461 /* ImageCardView.swift */; };
 		98BDE2732B441EA500948BD6 /* DefaultsKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDE2722B441EA500948BD6 /* DefaultsKey+Extensions.swift */; };
 		98BDE2762B4427DE00948BD6 /* ToastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDE2752B4427DE00948BD6 /* ToastPresenter.swift */; };
@@ -161,13 +166,18 @@
 		986CC4092B4B5E49008D26D7 /* CelestialBodiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialBodiesRouter.swift; sourceTree = "<group>"; };
 		986CC40A2B4B5E49008D26D7 /* CelestialBodiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialBodiesViewController.swift; sourceTree = "<group>"; };
 		986CC40B2B4B5E49008D26D7 /* CelestialBodiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialBodiesViewModel.swift; sourceTree = "<group>"; };
+		98727C5A2B658C72001BDAD3 /* GetPlanetsDiscoveryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlanetsDiscoveryRequest.swift; sourceTree = "<group>"; };
+		98727C5D2B658FEE001BDAD3 /* DiscoveryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryCellViewModel.swift; sourceTree = "<group>"; };
+		98727C5F2B6590ED001BDAD3 /* DiscoveryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryCell.swift; sourceTree = "<group>"; };
+		98727C6A2B6599FC001BDAD3 /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
+		98727C6C2B659AA8001BDAD3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		98727C6E2B659B56001BDAD3 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		9875E1A22B4C5284006BA3E9 /* Segments.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Segments.strings; sourceTree = "<group>"; };
 		9875E1A72B4C88DF006BA3E9 /* MPLUSRounded1c-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Regular.ttf"; sourceTree = "<group>"; };
 		9875E1B02B4C8C10006BA3E9 /* MPLUSRounded1c-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPLUSRounded1c-Black.ttf"; sourceTree = "<group>"; };
 		98780C662B49E80700C7C46B /* Planets.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Planets.strings; sourceTree = "<group>"; };
 		98780C682B49E80D00C7C46B /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		989E2C5F2B61348C00E84461 /* Solars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solars.swift; sourceTree = "<group>"; };
-		989E2C622B613ED100E84461 /* PlanetDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailCell.swift; sourceTree = "<group>"; };
 		989E2C642B613FBF00E84461 /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
 		98BDE2722B441EA500948BD6 /* DefaultsKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultsKey+Extensions.swift"; sourceTree = "<group>"; };
 		98BDE2752B4427DE00948BD6 /* ToastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastPresenter.swift; sourceTree = "<group>"; };
@@ -523,12 +533,22 @@
 			path = CelestialBodies;
 			sourceTree = "<group>";
 		};
-		989E2C612B613DFE00E84461 /* PlanetDetail */ = {
+		98727C5C2B658F8E001BDAD3 /* PlanetDiscovery */ = {
 			isa = PBXGroup;
 			children = (
-				989E2C622B613ED100E84461 /* PlanetDetailCell.swift */,
+				98727C5D2B658FEE001BDAD3 /* DiscoveryCellViewModel.swift */,
+				98727C5F2B6590ED001BDAD3 /* DiscoveryCell.swift */,
 			);
-			path = PlanetDetail;
+			path = PlanetDiscovery;
+			sourceTree = "<group>";
+		};
+		98727C692B6599DE001BDAD3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				98727C6A2B6599FC001BDAD3 /* HeaderViewModel.swift */,
+				98727C6C2B659AA8001BDAD3 /* HeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		98BDE2712B441E9100948BD6 /* Extensions */ = {
@@ -554,6 +574,7 @@
 				98BDE27C2B442E1D00948BD6 /* UIImage+Extensions.swift */,
 				98BDE2842B44B97300948BD6 /* UIImageView+Extensions.swift */,
 				986CC3FD2B4B5930008D26D7 /* SegmentioOptions+Extensions.swift */,
+				98727C6E2B659B56001BDAD3 /* UILabel+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -563,7 +584,7 @@
 			children = (
 				98BDE27F2B44306000948BD6 /* Intro */,
 				98D233E42B48233A00DDB4BF /* Planet */,
-				989E2C612B613DFE00E84461 /* PlanetDetail */,
+				98727C5C2B658F8E001BDAD3 /* PlanetDiscovery */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -601,6 +622,7 @@
 		98D233D32B46DAA400DDB4BF /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				98727C692B6599DE001BDAD3 /* Header */,
 				98D233DC2B46DAD700DDB4BF /* DiscoveryRoute.swift */,
 				98D233DE2B46DAE600DDB4BF /* DiscoveryRouter.swift */,
 				98D233E02B46DAE600DDB4BF /* DiscoveryViewModel.swift */,
@@ -655,6 +677,7 @@
 			isa = PBXGroup;
 			children = (
 				98D234052B48A76800DDB4BF /* GetPlanetsRequest.swift */,
+				98727C5A2B658C72001BDAD3 /* GetPlanetsDiscoveryRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -855,6 +878,7 @@
 				986CC4052B4B5A18008D26D7 /* DwarfPlanetViewController.swift in Sources */,
 				984144352B436FA30054CF3D /* BaseRouter.swift in Sources */,
 				9844C9522B3C83E6000D7602 /* Closures.swift in Sources */,
+				98727C5B2B658C72001BDAD3 /* GetPlanetsDiscoveryRequest.swift in Sources */,
 				98D233F22B48536500DDB4BF /* Typealias.swift in Sources */,
 				98D2340D2B48A8BC00DDB4BF /* APIRequestInterceptor.swift in Sources */,
 				98D233F42B48537900DDB4BF /* RequestMethod.swift in Sources */,
@@ -865,13 +889,15 @@
 				986CC4082B4B5E17008D26D7 /* CelestialBodiesRoute.swift in Sources */,
 				98D233E32B46DAE600DDB4BF /* DiscoveryViewModel.swift in Sources */,
 				98D233F82B48539F00DDB4BF /* RequestProtocol.swift in Sources */,
-				989E2C632B613ED100E84461 /* PlanetDetailCell.swift in Sources */,
 				9844C95C2B3C859A000D7602 /* ReusableView.swift in Sources */,
 				984737382B5C5EA9004FB9FD /* PlanetDetailView.swift in Sources */,
 				98BDE27A2B4428E300948BD6 /* UIFont+Extensions.swift in Sources */,
 				986CC3F92B4B5051008D26D7 /* PlanetViewController.swift in Sources */,
+				98727C5E2B658FEE001BDAD3 /* DiscoveryCellViewModel.swift in Sources */,
 				9841442A2B436EBC0054CF3D /* Animator.swift in Sources */,
+				98727C6D2B659AA8001BDAD3 /* HeaderView.swift in Sources */,
 				98BDE2732B441EA500948BD6 /* DefaultsKey+Extensions.swift in Sources */,
+				98727C6F2B659B56001BDAD3 /* UILabel+Extensions.swift in Sources */,
 				9844C9482B3C620C000D7602 /* MainTabBarController.swift in Sources */,
 				98D233E22B46DAE600DDB4BF /* DiscoveryViewController.swift in Sources */,
 				9844C96B2B3C88A5000D7602 /* IntroViewController.swift in Sources */,
@@ -884,6 +910,7 @@
 				9844C9572B3C84AE000D7602 /* BaseViewController.swift in Sources */,
 				98D234062B48A76800DDB4BF /* GetPlanetsRequest.swift in Sources */,
 				98D234092B48A89200DDB4BF /* DataProvider.swift in Sources */,
+				98727C6B2B6599FC001BDAD3 /* HeaderViewModel.swift in Sources */,
 				986CC3FA2B4B5051008D26D7 /* PlanetViewModel.swift in Sources */,
 				98BDE2762B4427DE00948BD6 /* ToastPresenter.swift in Sources */,
 				989E2C652B613FBF00E84461 /* ImageCardView.swift in Sources */,
@@ -903,6 +930,7 @@
 				98BDE27D2B442E1D00948BD6 /* UIImage+Extensions.swift in Sources */,
 				98D233FA2B48A63100DDB4BF /* DecodableResponseRequest.swift in Sources */,
 				980CF7852B4DBC9800AF0D9C /* DetailViewController.swift in Sources */,
+				98727C602B6590ED001BDAD3 /* DiscoveryCell.swift in Sources */,
 				98D233F62B48538B00DDB4BF /* RequestEncoding.swift in Sources */,
 				98D234012B48A6EB00DDB4BF /* APIRequestAdapter.swift in Sources */,
 				986CC4042B4B5A18008D26D7 /* DwarfPlanetRouter.swift in Sources */,

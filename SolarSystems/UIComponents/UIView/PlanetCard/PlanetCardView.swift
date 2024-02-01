@@ -66,13 +66,8 @@ extension PlanetCardView {
     private func configureContents(){
         backgroundColor    = .clear
         layer.borderWidth  = 0.5
-        layer.borderColor  = Asset.Colors.appBlue.color.withAlphaComponent(0.6).cgColor
+        layer.borderColor  = Asset.Colors.appGray.color.withAlphaComponent(0.6).cgColor
         layer.cornerRadius = 30
-    
-        layer.shadowColor = Asset.Colors.appMars.color.cgColor
-        layer.shadowOpacity = 0.5
-        layer.shadowOffset = CGSize(width: 0, height: 5)
-        layer.shadowRadius = 10
     }
 }
 

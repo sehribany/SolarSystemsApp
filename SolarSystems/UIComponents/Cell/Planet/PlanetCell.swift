@@ -51,7 +51,7 @@ extension PlanetCell{
     private func addView(){
         addSubview(planetCard)
         planetCard.topToSuperview().constant      = 157
-        planetCard.bottomToSuperview().constant   = -50
+        planetCard.bottomToSuperview().constant   = -35
         planetCard.leadingToSuperview().constant  = 30
         planetCard.trailingToSuperview().constant = -35
     }

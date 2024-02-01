@@ -48,5 +48,6 @@ extension DetailViewController {
         detailCardView.cardView.imageView.setImage(viewModel.planetDetail.picture)
         detailCardView.titleLabel.text = viewModel.planetDetail.name
         detailCardView.descriptionLabel.text = viewModel.planetDetail.description
+        detailCardView.moonsValueTitle.text  = String( viewModel.planetDetail.numberOfMoons)
     }
 }

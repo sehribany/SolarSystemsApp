@@ -70,7 +70,7 @@ public class PlanetDetailView: UIView {
         return label
     }()
 
-    private let moonsValueTitle: UILabel = {
+    public let moonsValueTitle: UILabel = {
         let label = UILabel()
         label.text = "1"
         label.font          = UIFont.font(.montserratLight, size: .custom(size: 17))

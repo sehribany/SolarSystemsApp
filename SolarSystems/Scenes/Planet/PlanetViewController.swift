@@ -55,7 +55,7 @@ extension PlanetViewController {
     
     private func backgroundDraw(){
         view.addSubview(backGround)
-        backGround.image = Asset.Images.homeScreen.image
+        backGround.image = Asset.Images.starsBackground.image
         backGround.edgesToSuperview()
     }
 }
